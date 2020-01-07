@@ -1,0 +1,354 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Lato-Black";
+  src: url("../fonts/Lato-Black.ttf") format("ttf"); }
+
+@font-face {
+  font-family: "Lato-Bold";
+  src: url("../fonts/Lato-Bold.ttf") format("ttf"); }
+
+@font-face {
+  font-family: "Lato-Regular";
+  src: url("../fonts/Lato-Regular.ttf") format("ttf"); }
+
+@font-face {
+  font-family: "Lato-Semibold";
+  src: url("../fonts/Lato-Semibold.ttf") format("ttf"); }
+
+@font-face {
+  font-family: "China";
+  src: url("../fonts/8650.ttf") format("ttf"); }
+
+.logo {
+  width: 100px;
+  height: 100px; }
+
+.main-header {
+  background-image: url("../img/9 дворцов фон.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  background-position: center;
+  min-height: 850px;
+  padding-bottom: 50px; }
+  .main-header .main-header__title {
+    font-family: "Lato-Black";
+    font-size: 55px;
+    text-transform: uppercase; }
+  .main-header .main-header__title--china {
+    font-family: "China";
+    font-size: 55px;
+    text-transform: uppercase;
+    color: #FAD264; }
+  .main-header .line-stars {
+    width: 100%;
+    text-align: center; }
+  .main-header p {
+    font-family: "Lato-Regular";
+    font-size: 20px;
+    text-align: center; }
+    .main-header p span {
+      color: #FAD264; }
+  .main-header ul {
+    padding: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .main-header ul li {
+      width: 250px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-right: 30px; }
+      .main-header ul li img {
+        margin-right: 20px;
+        height: 60px;
+        width: 60px; }
+  .main-header .price-education {
+    font-family: "Lato-Bold";
+    font-size: 24px;
+    text-transform: uppercase; }
+    .main-header .price-education span {
+      font-size: 36px; }
+  .main-header .free-space__block {
+    width: 250px;
+    padding: 0 10px;
+    text-align: center;
+    position: relative; }
+    .main-header .free-space__block p {
+      margin-bottom: 22px; }
+    .main-header .free-space__block span:not(:last-child) {
+      margin-right: 40%; }
+  .main-header .free-space__block::before,
+  .main-header .free-space__block::after {
+    content: "";
+    display: block;
+    background-image: url("../img/skob-left.png");
+    width: 25px;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    left: -20px;
+    top: 0; }
+  .main-header .free-space__block::after {
+    background-image: url("../img/skob-right.png");
+    left: initial;
+    right: -20px; }
+
+.btn-submit {
+  font-size: 18px;
+  color: #000000;
+  background: #FAD264;
+  border-radius: 40px;
+  padding: 25px 50px;
+  margin-top: 40px;
+  text-transform: uppercase;
+  min-width: 240px; }
+
+.btn-submit:hover {
+  background-color: #000;
+  color: #FAD264; }
+
+.section-product p {
+  text-transform: uppercase;
+  color: #FFA115;
+  font-size: 40px; }
+  .section-product p span {
+    color: black; }
+
+.section-product .procuct-card {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-right: 5px solid #097369; }
+  .section-product .procuct-card ul {
+    padding: 0;
+    list-style: none;
+    margin-top: 30px; }
+    .section-product .procuct-card ul li {
+      margin-bottom: 15px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      font-size: 18px;
+      position: relative;
+      padding-left: 80px;
+      min-height: 60px; }
+    .section-product .procuct-card ul li::before {
+      content: "";
+      background-image: url(../img/галочка.png);
+      display: block;
+      width: 60px;
+      height: 60px;
+      border: 1px solid #F2C94C;
+      border-radius: 50%;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: absolute;
+      left: 0; }
+  .section-product .procuct-card p {
+    color: #FFA115;
+    font-size: 24px;
+    text-transform: uppercase; }
+  .section-product .procuct-card h3 {
+    font-weight: 900;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #000000; }
+
+.section-product .procuct-card:first-child {
+  border-top: none;
+  border-bottom: 5px solid #097369; }
+
+.section-product .procuct-card:last-child {
+  border-right: none; }
+
+.section-product .col-6 img {
+  width: 460px; }
+
+.about-me {
+  background-image: url("../img/9 дворцов фон 2.png");
+  background-repeat: no-repeat;
+  color: white; }
+
+p {
+  margin: 0; }
+
+.order-block .price-education {
+  font-family: "Lato-Bold";
+  font-size: 24px;
+  text-transform: uppercase; }
+  .order-block .price-education span {
+    font-size: 36px;
+    color: #FFA115; }
+
+.order-block .free-space__block {
+  width: 250px;
+  padding: 0 10px;
+  text-align: center;
+  position: relative; }
+  .order-block .free-space__block p {
+    margin-bottom: 22px; }
+  .order-block .free-space__block span:not(:last-child) {
+    margin-right: 40%; }
+
+.order-block .free-space__block::before,
+.order-block .free-space__block::after {
+  content: "";
+  display: block;
+  background-image: url("../img/skob-left.png");
+  width: 25px;
+  height: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  left: -20px;
+  top: 0; }
+
+.order-block .free-space__block::after {
+  background-image: url("../img/skob-right.png");
+  left: initial;
+  right: -20px; }
+
+.order-block .order-block__subtitle {
+  font-size: 24px;
+  text-transform: uppercase; }
+
+.order-block .order-block__title {
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #FFA115;
+  margin-bottom: 55px; }
+
+img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain; }
+
+footer {
+  background-image: url("../img/9 дворцов фон 2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white; }
+
+.preview-course {
+  padding: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%; }
+
+.preview-course span {
+  font-size: 24px;
+  color: #FFA115; }
+
+.preview-course h2 {
+  color: black; }
+
+.preview-course p {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: black;
+  text-align: center; }
+
+.preview-course .list p {
+  background: #FFA115;
+  display: block;
+  color: white;
+  padding: 10px; }
+
+.preview-course ul {
+  list-style: none;
+  padding: 0; }
+
+.preview-course ul li {
+  padding-left: 20px;
+  position: relative; }
+
+.preview-course ul li::before {
+  content: "●";
+  color: #FAD264;
+  display: block;
+  position: absolute;
+  left: 0; }
+
+@media (max-width: 768px) {
+  .main-header .main-header__title {
+    font-size: 20px; }
+  .main-header__title--china {
+    font-size: 39px;
+    text-align: center; }
+  .main-header p {
+    font-size: 16px; }
+  .section-product p {
+    font-size: 24px; }
+  .section-product .procuct-card p {
+    font-size: 18px;
+    text-align: center; }
+  .section-product .procuct-card h3 {
+    font-size: 24px;
+    text-align: center; }
+  .section-product .procuct-card ul li {
+    padding: 0; }
+  .section-product .procuct-card ul li::before {
+    display: none; }
+  .section-product .procuct-card ul li:first-of-type::before {
+    display: block;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%); }
+  .section-product .procuct-card ul li:first-of-type {
+    padding-top: 60px; }
+  .about-me {
+    background-size: cover; }
+  .order-block .order-block__subtitle {
+    font-size: 16px;
+    text-align: center; }
+  .order-block .order-block__title {
+    font-size: 24px;
+    text-align: center; }
+  .order-block .price-education {
+    text-align: center; }
+  footer p {
+    text-align: center;
+    margin-bottom: 15px; }
+  .section-product .procuct-card:first-child,
+  .section-product .procuct-card {
+    border: none; }
+  .section-product .procuct-card {
+    border-top: 5px solid #10618F; } }
